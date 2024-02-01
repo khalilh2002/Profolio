@@ -184,8 +184,6 @@ body{
       
 } 
 
-
-
 .view-project{
     position: absolute;
     bottom: 30px;
@@ -208,4 +206,83 @@ body{
 .view-project a:hover{
     color: #ededed;
     background-color: #005592;
+}
+
+/* --------------------------------------section 3-----------------------*/
+.education-container{
+    min-height: 100vh;
+    background: #0076ca;
+    padding: 75px 3% 35px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.timeline{
+    background: transparent;
+    padding-left: 30px;
+    border-left: 6px rgb(241, 241, 241) dashed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2em;
+}
+.education-self{
+    background-color: #005f85;
+    box-shadow:black 5px 5px 20px;
+    max-width: 600px;
+    
+    min-width: 500px;
+    min-height: 150px;
+    border-radius: 25px;
+    padding: 15px;
+
+    color: rgb(248, 248, 248);
+
+}
+.education-self h3{
+    font-weight: 700;
+}
+.education-self h4{
+    font-weight: 500;
+}
+
+.education-container .title h2{
+    font-size: 45px;
+    padding: 10px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    transform: translateX(-80%);
+
+    color: white;
+}
+
+.education-self:hover{
+    background-color: hsl(197, 100%, 40%);
+    cursor: pointer;
+    box-shadow:black 5px 5px 5px;
+}
+/*----------------------------section 3 ------------------------------------*/
+.skills-container{
+    min-height: 100vh;
+    background: yellowgreen;
+    padding: 75px 3% 35px ;
+    
+}
+.skills-container .title h2{
+    font-size: 45px;
+    padding: 10px;
+    margin-bottom: 25px;
+    font-weight: 600;
+
+    display: inline-flex;
+    background-color: red;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.skills-container ul{
+    list-style: none;
 }
