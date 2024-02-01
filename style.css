@@ -48,7 +48,7 @@ body{
 
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 10%;
 }
 .intro-container{
@@ -133,46 +133,65 @@ body{
 
 .project-content{
     padding: 90px 3% 20px ;
-    height: 100vh;
+    min-height: 100vh;
     
-    background-color:#0289be ;
-    overflow:auto;
+    background-color: #005592;
 
     display: flex;
     justify-content: space-around;
-    align-items:flex;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+
 }
 .project-content .project-self {
     border: 2px solid black;
     border-radius:25px ;
-    min-width: 200px;
-    margin-left: 10px;
-    padding: 30px 5px 5px 10px;
 
+    min-width: 300px;
+    width: 25%;
+    max-width: 400px;
+    min-height:500px ;
+
+    margin-bottom: 10px;
+
+    padding: 30px 5px 5px 10px;
     box-shadow: 6px 1px 10px #081b29;
+
+    position: relative;
+    background-color:#0289be ;
+
     overflow: auto;
 }
-.project-content .project-self .description{
+.project-content .project-self .description p{
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 15px;
+    padding: 25px 18px ;
     font-weight: 500;
+    font-size: 14px;
+    text-align: center;
 }
 .project-content .project-self .project-photo{
     display: flex;
     justify-content: center;
+    height: 40%;
+    max-height: 250px;
 }
 .project-content .project-self .project-photo img{
-    width: 80%;
+    width: 70%;
     max-width: 600px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.596);
     border-radius: 10px;
-    margin-bottom: 10px;  
+      
 } 
 
-.view-project{
-    display: flex;
-    justify-content: center;
 
+
+.view-project{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    
 }
 
 .view-project a{
@@ -181,9 +200,9 @@ body{
     border: 2px black solid;
     padding: 8px 15px;
     border-radius: 25px;
-    margin-top: 10px;
-    font-weight: 600;
 
+    font-weight: 600;
+    background-color: #00abf0;
     transition: .3s;
 }
 .view-project a:hover{
