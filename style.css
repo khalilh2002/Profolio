@@ -110,7 +110,7 @@ body{
 }
 .intro .scoial-icons{
     display: flex;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     right: 0;
     margin: 20px;
@@ -267,8 +267,8 @@ body{
 /*----------------------------section 3 ------------------------------------*/
 .skills-container{
     min-height: 100vh;
-    background: yellowgreen;
-    padding: 75px 3% 35px ;
+    background:  hsl(197, 100%, 40%);
+    padding: 75px 20% 35px ;
     
 }
 .skills-container .title h2{
@@ -276,13 +276,85 @@ body{
     padding: 10px;
     margin-bottom: 25px;
     font-weight: 600;
-
+    color: white;
     display: inline-flex;
-    background-color: red;
+    background-color: transparent;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
 .skills-container ul{
     list-style: none;
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 2px 1px rebeccapurple;
+}
+.bar-container{
+    background: rgba(255, 255, 255, 0.719);
+    border:2px solid black;
+    border-radius: 25px;
+    margin-bottom: 18px;
+}
+.bar{
+    display: inline-block;
+    padding-right: 10px;
+    background:  #005f85;
+    border-radius: 25px;
+    color: white;   
+}
+#html ,#js ,#python ,#cpp{
+    padding-left: 75%;
+}
+#java , #sql {
+    padding-left: 70%;
+}
+#linux, #php{
+    padding-left: 60%;
+}
+
+/*---------------------- section 4 -------------------------------------*/
+.contact-container{
+    min-height: 100vh;
+    background-color:  hsl(190, 100%, 40%);
+    padding: 90px 3% 35px ;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-content: space-evenly;
+}
+.contact-container .photo{
+    max-width: 350px;
+    background: hsl(40, 100%, 60%);
+    border-radius: 20px;
+    text-align: center;
+}
+.contact-container .photo img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.contact-container .about p{
+    padding: 10% 10% 10px;
+    font-size: 25px;
+    background-color: transparent;
+}
+.contact-container .scoial-icons{
+    width: 40%;
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-around;
+}
+/*------------------footer---------------*/
+footer{
+    height: 20vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #081b29;
+    color: white;
+    padding: 0 40px;
+}
+footer p , footer a{
+    font-family: monospace;
+    font-size: 18px;
 }
