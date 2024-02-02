@@ -145,7 +145,7 @@ body{
 
 }
 .project-content .project-self {
-    border: 2px solid black;
+   /* border: 2px solid black;*/
     border-radius:25px ;
 
     min-width: 300px;
@@ -159,7 +159,7 @@ body{
     box-shadow: 6px 1px 10px #081b29;
 
     position: relative;
-    background-color:#0289be ;
+    background-color:hsl(197, 98%, 38%) ;
 
     overflow: auto;
 }
@@ -195,7 +195,7 @@ body{
 .view-project a{
     color: inherit;
     text-decoration: none;
-    border: 2px black solid;
+    border: 1px black solid;
     padding: 8px 15px;
     border-radius: 25px;
 
@@ -324,10 +324,12 @@ body{
 }
 .contact-container .photo{
     max-width: 350px;
-    background: hsl(40, 100%, 60%);
     border-radius: 20px;
     text-align: center;
+    background: hsl(40, 100%, 60%);
+
 }
+
 .contact-container .photo img{
     width: 100%;
     border-top-left-radius: 20px;
