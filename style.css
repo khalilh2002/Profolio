@@ -50,6 +50,10 @@ body{
     align-items: center;
     min-height: 100vh;
     padding: 0 10%;
+    overflow: hidden;
+
+
+
 }
 .intro-container{
     background-color: transparent;
@@ -125,7 +129,7 @@ body{
     align-items:center;
 }
 .intro-photo img{
-    width: 500px;
+    width:100vh;
 }
 
 
@@ -342,6 +346,7 @@ body{
 }
 .contact-container .scoial-icons{
     width: 40%;
+    min-width: 250px;
     padding: 10px 10%;
     display: flex;
     justify-content: space-around;
@@ -359,4 +364,20 @@ footer{
 footer p , footer a{
     font-family: monospace;
     font-size: 18px;
+}
+
+.project-content .title h2{
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+}
+
+@media screen and (max-width:770px) {
+    .header{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
 }
