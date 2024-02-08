@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
-
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
-}
-
-body{
     scroll-behavior: smooth;
 }
+
 
 .header{
     background-color:  #005f85;
@@ -23,7 +23,11 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transform:  .3s;
     z-index: 100;
+}
+header > a:hover{
+    color: #a9e7ff;
 }
 .logo{
     font-size: 25px;
@@ -95,7 +99,6 @@ body{
     background-color: #00abf0;
     text-decoration: none;
     letter-spacing: 1px;
-    z-index: 1;
 
     transition: .5s;
     
@@ -146,6 +149,7 @@ body{
     column-gap: 10px;
     row-gap: 10px;
     flex-wrap: wrap;
+    
 
 }
 .project-content .project-self {
@@ -188,6 +192,18 @@ body{
       
 } 
 
+.project-content-max{
+    background-color: #005592;
+    padding-top: 90px;
+}
+.project-content-max .title h2{
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+
+}
 .view-project{
     position: absolute;
     bottom: 30px;
@@ -238,7 +254,7 @@ body{
     box-shadow:black 5px 5px 20px;
     max-width: 600px;
     
-    min-width: 500px;
+    min-width: 600px;
     min-height: 150px;
     border-radius: 25px;
     padding: 15px;
@@ -330,7 +346,13 @@ body{
     max-width: 350px;
     border-radius: 20px;
     text-align: center;
-    background: hsl(40, 100%, 60%);
+    background-color: hsl(40, 100%, 60%);
+}
+
+.contact-container .photo h3{
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
 }
 
@@ -338,7 +360,10 @@ body{
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+
 }
+
+
 .contact-container .about p{
     padding: 10% 10% 10px;
     font-size: 25px;
@@ -366,18 +391,72 @@ footer p , footer a{
     font-size: 18px;
 }
 
-.project-content .title h2{
-    font-size: 45px;
-    font-weight: 600;
-    color: white;
-    background-color: transparent;
-    text-align: center;
-}
+
 
 @media screen and (max-width:770px) {
     .header{
         flex-direction: column;
         gap: 20px;
     }
+    .navbar a{
+        font-size: 17px;
+    }
+    #home0{
+        display: none;
+    }
+    .intro-container {
+        padding-top: 150px;
+    }
+    .intro img{
+        display: none;
+    }
+    
+    /*education*/
+    .education-container .title h2{
+        justify-self: center;
+        transform: translateX(0%);
+    }
+    .education-self{
+        width: 50px;
+    }
+    .education-self{
+        background-color: #005f85;
+        box-shadow:black 5px 5px 20px;
+        max-width: 600px;
+        
+        min-width: 300px;
+        min-height: 150px;
+        border-radius: 25px;
+        padding: 15px;
+    
+    }
+    .education-self h3{
+        font-weight: 500;
+        color: #fa9d9d;
+    }
+    .education-self h4{
+        font-weight: 300;
+    }
+    
+    .education-container .title h2{
+        font-size: 40px;
+        margin-bottom: 10px;
+        font-weight: 600;
+        
+    }
+    
+    
+    /*contact*/
+    .contact-container {
+        display: flex;
+        flex-direction: column; 
+    }
+    .contact-container .photo{
+        max-width: 250px;
+        justify-self: center;
+        align-self: center;
+    }
+
     
 }
+
