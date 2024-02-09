@@ -10,7 +10,24 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+/*-------------------------------TOP button--------------------------------------------------*/
+#top-button{
+    background: transparent;
+    z-index: 100;
+    display: block;
+    color: red;
+    
+    font-size: 20px;
 
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+    width: 60px;
+}
+#top-button:hover{
+    background-color: lightgray;
+}
+/*--------------------------------------header------------------------------------------*/
 
 .header{
     background-color:  #005f85;
@@ -24,7 +41,7 @@
     justify-content: space-around;
     align-items: center;
     transform:  .3s;
-    z-index: 100;
+    z-index: 99;
 }
 header > a:hover{
     color: #a9e7ff;
